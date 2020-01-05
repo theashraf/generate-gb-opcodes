@@ -61,6 +61,8 @@ describe('App', () => {
     it('updates the activeInstruction passed to the DetailsSidebar', () => {
       expect(component.find(DetailsSidebar).prop('activeInstruction')).toEqual(instructionClicked);
     });
+    it.todo('moves focus to inside the DetailsSidebar', () => {
+    });
 
     describe('when close sidebar button is clicked', () => {
       beforeAll(() => {

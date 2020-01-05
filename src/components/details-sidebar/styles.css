@@ -10,6 +10,10 @@
   padding: 20px;
 }
 
+.closed {
+  
+}
+
 .header {
   display: flex;
   justify-content: space-between;

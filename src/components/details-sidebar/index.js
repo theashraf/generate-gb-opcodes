@@ -16,10 +16,15 @@ const DetailsSidebar = ({
     },
   },
   hideSidebar,
+  sidebarRef,
 }) => (
   <aside id="details-sidebar" className={styles.sidebar}>
     <div id="sidebar-header" className={styles.header}>
-      <h3 className={styles.title}>
+      <h3
+        className={styles.title}
+        ref={sidebarRef}
+        tabIndex={-1}
+      >
         {mnemonic}
       </h3>
       <button
@@ -60,4 +65,5 @@ DetailsSidebar.propTypes = {
     opCode: PropTypes.string,
   }).isRequired,
   hideSidebar: PropTypes.func.isRequired,
+  sidebarRef: PropTypes.element.isRequired,
 };
